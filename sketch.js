@@ -83,26 +83,6 @@ function setup() {
   //onebutton.style("background-color", "#4CAF50");
 }
 
-/*function start(){
-  canvas = createCanvas(screen.width, screen.height);
-  //image(third, 0, 0, screen.width, screen.height);
-  //image(theImages[0], 30, 400, 300, 221);
-  //image(theImages[1], 30, 50, 250, 250);
-  fill(78, 200, 180)
-  stroke(78, 200, 180);
-  textFont("Courier New", 70);
-  textAlign(CENTER);
-  text("The Economics of Video Games", 325, 75, 600, 300);
-  onebutton = createButton('START');
-  onebutton.position((screen.width/2)-140, 320);
-  onebutton.mousePressed(page2);
-  onebutton.size(100, 50);
-  onebutton.style("padding", "25px 100px");
-  onebutton.style("font-size", "24px");
-  onebutton.style("text-align", "center");
-  onebutton.style("background-color", "#4CAF50");
-}*/
-
 function page1(){
   canvas = createCanvas(screen.width, screen.height);
   textFont("Courier New", 70);
@@ -164,6 +144,7 @@ function animation(){
 }
 
 function draw(){
+  page1();
   for (let i = 0; i < bubbles.length; i++) {
       bubbles[i].move();
       bubbles[i].show();
@@ -171,33 +152,11 @@ function draw(){
 }
 
 function mousePressed() {
-  /*  i = i + 1;
-  if (i == theImages.length) {
-    i = 0;
-  }*/
   let r = random(10, 50);
   let b = new Bubble(mouseX, mouseY, r);
   bubbles.push(b);
 }
 
-/*function setup() {
-  createCanvas(screen.width, screen.height);
-}
 
-function draw() {
-  background(0);
-  stroke(255);
-  strokeWeight(4);
-  noFill();
-  for(x = 0; x<screen.width; x++){
-    ellipse(x, y, 100, 100);
-    if (y > screen.height-150) {
-      speed = -3;
-    }
-    y=y+speed
-    if (y < 50) {
-      speed = 3;
-    }
 
-  }
-}*/
+
