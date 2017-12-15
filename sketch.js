@@ -116,7 +116,7 @@ function removeFutureButtons(){ //removes all buttons from 'FUTURE' tab
   futurebuttons[3].remove();
 }
 
-function beg() { /page for history of video games
+function beg() { //page for history of video games
     frontButtons[0].remove();
     frontButtons[1].remove();
     frontButtons[2].remove();
