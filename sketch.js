@@ -1,7 +1,6 @@
 var buttons = ["History", "Blank", "eSports", "Future", "Home"];
 var theImages = ["img", "second", "third", "fourth", "fifth", "EsportsRevenue", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "more", "then", "k"];
 var buttonfeature = ["one", "two", "three", "four", "five"];
-var buttonImage = ["oneimg", "twoimg", "threeimg", "fourimg"];
 var frontButtons = ["one", "two", "three", "four", "front"];
 var ebuttons = ["eSportsRevenue", "HighProfileInvestments", "SoccerInvestments", "WhyPopular"];
 var futurebuttons = ["teslasuit", "guidevr", "three", "four"];
