@@ -1,11 +1,11 @@
-var buttons = ["onebutton", "twobutton", "threebutton", "fourbutton", "fivebutton"];
+var buttons = ["History", "Blank", "eSports", "Future", "Home"];
 var theImages = ["img", "second", "third", "fourth", "fifth", "EsportsRevenue", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "more", "then", "k"];
 var buttonfeature = ["one", "two", "three", "four", "five"];
 var buttonImage = ["oneimg", "twoimg", "threeimg", "fourimg"];
 var frontButtons = ["one", "two", "three", "four", "front"];
 var ebuttons = ["eSportsRevenue", "HighProfileInvestments", "SoccerInvestments", "WhyPopular"];
-var futurebuttons = ["one", "two", "three", "four"];
-var historybuttons = ["one", "two", "three", "four"];
+var futurebuttons = ["teslasuit", "guidevr", "three", "four"];
+var historybuttons = ["Infographic", "Facts", "Snake", "Pong"];
 var removeButton = ["beg", "eSports", "Future"]
 
 function setup() {
@@ -45,7 +45,7 @@ function preload() {
     theImages[16] = loadImage("pong.png")
 }
 
-function cover() {
+function cover() {//creates page, that becomes cover for each page
     createCanvas(windowWidth, windowHeight);
     background(255);
     noStroke();
@@ -68,6 +68,7 @@ function cover() {
     buttons[0] = createButton('The History of Video Games');
     buttons[0].position(50, 125);
     buttons[0].mousePressed(beg);
+    
     buttons[2] = createButton('The Rise of eSports');
     buttons[2].position(300, 125);
     buttons[2].mousePressed(esports);
@@ -93,7 +94,7 @@ function cover() {
     removeButton[4].mousePressed(removeFutureButtons);
 }
 
-function removeHistButtons(){
+function removeHistButtons(){ //removes all buttons from 'HISTORY' tab
   historybuttons[0].remove();
   historybuttons[1].remove();
   historybuttons[2].remove();
@@ -101,21 +102,21 @@ function removeHistButtons(){
 
 }
 
-function removeEButtons(){
+function removeEButtons(){ //removes all buttons from 'eSPORTS' tab
   ebuttons[0].remove();
   ebuttons[1].remove();
   ebuttons[2].remove();
   ebuttons[3].remove();
 }
 
-function removeFutureButtons(){
+function removeFutureButtons(){ //removes all buttons from 'FUTURE' tab
   futurebuttons[0].remove();
   futurebuttons[1].remove();
   futurebuttons[2].remove();
   futurebuttons[3].remove();
 }
 
-function beg() {
+function beg() { /page for history of video games
     frontButtons[0].remove();
     frontButtons[1].remove();
     frontButtons[2].remove();
@@ -168,7 +169,7 @@ function pong(){
   window.open('https://pong-2.com/');
 }
 
-function esports() {
+function esports() { //page for eSPorts
     frontButtons[0].remove();
     frontButtons[1].remove();
     frontButtons[2].remove();
@@ -230,7 +231,7 @@ function popularity(){
   window.open("https://thelacesout.com/why-sports-teams-are-investing-in-esports-and-why-you-should-too-7d1143464a33");
 }
 
-function future() {
+function future() { //page for future technology
     frontButtons[0].remove();
     frontButtons[1].remove();
     frontButtons[2].remove();
@@ -290,7 +291,7 @@ function vrrisks(){
   window.open("https://www.cnn.com/2017/12/13/health/virtual-reality-vr-dangers-safety/index.html");
 }
 
-function beginning() {
+function beginning() { // create home page
     cover();
     image(theImages[9], 0, 175, window.width, window.width*0.625, 40, 200, 1200, 800);
     frontButtons[0] = createButton('Imagine Games Network (IGN)');
