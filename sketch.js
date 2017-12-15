@@ -1,24 +1,3 @@
-/*
-Title:
-Imagined, Designed, and Programmed by: Alexander Yu
-Date: 12/15/17
-Description: 
-Sources of ideas and inspiration (title, author, URL):
- * 
- *
- *
- 
-Includes code from (title, author, URL):
- *  Button and inputs, p5, https://p5js.org/examples/dom-input-and-button.html
- *
- * 
- 
-<Check that variable and function names are easy to read and understand. eg. "squareButton" vs.
-"shapeButton2">
-<If you can't remember where you found some code, Google the text to find it.>
-<Put your name in the name of this file!>
-*/
-
 var buttons = ["onebutton", "twobutton", "threebutton", "fourbutton", "fivebutton"];
 var theImages = ["img", "second", "third", "fourth", "fifth", "EsportsRevenue", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "more", "then", "k"];
 var buttonfeature = ["one", "two", "three", "four", "five"];
